@@ -87,6 +87,33 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
   })
 
+  .state('app.journey', {
+      url:'/journey',
+      views:{
+        'menuContent': {
+          templateUrl: 'templates/journey.html'
+        }
+      }
+  })
+
+  .state('app.milestones', {
+      url:'/milestones',
+      views:{
+        'menuContent': {
+          templateUrl: 'templates/milestones.html'
+        }
+      }
+  })
+
+  .state('app.track', {
+      url:'/track',
+      views:{
+        'menuContent': {
+          templateUrl: 'templates/trackday.html'
+        }
+      }
+  })
+
   .state('app.journey1', {
       url:'/journey1',
       views:{
