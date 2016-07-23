@@ -2,6 +2,8 @@
 
 #container5, #container2, #container3, #container4 {
   position: relative;
+  left: 50%;
+  margin-left: -35px;
   float: center;
   height: 70px;
   width: 70px;
@@ -14,22 +16,10 @@
   float: center;
 }
 
-#container2 {
-	color:#873CBD;
-}
-
-#container3 {
-	color:#35B21B;
-}
-
-#container4{
-	color:#4E77BD;
-}
-
 .col {
 	width: 19%;
 	float: left;
-	margin-right: 6%;
+	padding: 0 3%;
 }
 
 .wrapper img {
@@ -47,4 +37,33 @@ wrapper > img {
     margin-bottom: 10px;
     /* This needs to be equal to strokeWidth */
     padding: 4%;
+}
+
+.wrapper span {
+	margin-top: 15px;
+	width: 100%;
+	text-align: center;
+	display: block;
+	color: white;
+	font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+}
+
+h4{
+	position: relative;
+	top: 30px;
+	padding: 0 30px;
+	text-align: justify;
+	color: white;
+	font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+	font-variant: small-caps;
+}
+
+p{
+	position: relative;
+	top: 15px;
+	padding: 0 30px;
+	text-align: justify;
+	color: white;
+	font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+	font-size: 10pt;
 }
