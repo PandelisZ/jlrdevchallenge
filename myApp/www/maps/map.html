@@ -43,14 +43,14 @@ var q = getURLParameter('q');
 		}
 		
 		
-		for (var i = 0; i < obj.GPSLatDeg.length; i++) { 
+		for (var i = 0; i < Math.ceil(obj.GPSLatDeg.length/8.5); i++) { 
 			temp = {lat: obj.GPSLatDeg[i].val, lng: obj.GPSLngDeg[i].val};
 			coords.push(temp);
 			time = Date.parse(obj.GPSLngDeg[i].t);
 			
 			//This is my really slow and inefficient algorithm to determine the plotvar at the time ;)
 			diff = 99999999999999;
-			for (var k = 0; k < to_plot.length; k++) { 
+			for (var k = 0; k < Math.ceil(to_plot.length/8.5); k++) { 
 				if(Math.abs(Date.parse(to_plot[k].t)-time) < diff) {
 					diff = Math.abs(Date.parse(to_plot[k].t)-time);
 					diff_k = k;
