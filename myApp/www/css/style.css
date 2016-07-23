@@ -29,7 +29,7 @@
 .col {
 	width: 19%;
 	float: left;
-	margin-right: 6%;
+	margin: 0 3%;
 }
 
 .wrapper img {
@@ -47,4 +47,11 @@ wrapper > img {
     margin-bottom: 10px;
     /* This needs to be equal to strokeWidth */
     padding: 4%;
+}
+
+.wrapper span {
+	width: 100%;
+	text-align: center;
+	display: block;
+	color: white;
 }
