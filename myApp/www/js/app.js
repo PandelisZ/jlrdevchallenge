@@ -76,6 +76,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           templateUrl: 'templates/homeScreen.html'
         }
       }
+  })
+
+  .state('app.journey1', {
+      url:'/journey1',
+      views:{
+        'menuContent': {
+          templateUrl: 'templates/journeyViewTrack.html',
+          controller: 'slider'
+        }
+      }
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/home');
