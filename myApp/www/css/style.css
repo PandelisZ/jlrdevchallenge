@@ -1,4 +1,7 @@
 /* Empty. Add your own CSS if you like */
+
+
+
 #container {
   margin: 20px;
   width: 80%;
@@ -6,3 +9,17 @@
   position: relative;
   float: center;
 }
+/*
+.wrapper img{
+  filter: gray;
+  filter: grayscale(1); 
+  -webkit-filter: grayscale(1); 
+}
+
+.wrapper > #container, .wrapper > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5%;
+    height: 50%;
+}*/
