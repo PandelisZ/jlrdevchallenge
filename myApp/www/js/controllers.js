@@ -76,5 +76,21 @@ $scope.$on("$ionicSlides.slideChangeEnd", function(event, data){
   ];
 })
 
+.controller('HomeCtrl', function($scope) {
+  $scope.lol = 'test';
+  $scope.cards = [
+  'test', 'test'
+];
+
+$scope.cardDestroyed = function(index) {
+  $scope.cards.splice(index, 1);
+};
+
+$scope.cardSwiped = function(index) {
+  var newCard = // new card data
+  $scope.cards.push(newCard);
+};
+})
+
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 });

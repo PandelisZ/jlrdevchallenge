@@ -100,7 +100,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url:'/journey1',
       views:{
         'menuContent': {
-          templateUrl: 'templates/journeyViewTrack.html'
+          templateUrl: 'templates/journeyViewTrack.html',
+          controller: 'slider'
         }
       }
   })
@@ -109,7 +110,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: '/home',
     views: {
       'menuContent':{
-        templateUrl: 'templates/homeScreen.html'
+        templateUrl: 'templates/homeScreen.html',
+        controller: 'HomeCtrl'
       }
     }
   })

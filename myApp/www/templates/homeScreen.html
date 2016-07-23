@@ -16,6 +16,16 @@
   <ion-floating-button click="myEvent()" has-footer="false" button-color="#ef473a" icon="ion-plus" iconColor="#fff">
 </ion-floating-button>
     <ion-content padding="true" class="manual-ios-statusbar-padding">
+
+
+      <swipe-cards>
+  <swipe-card on-destroy="cardDestroyed($index)" on-card-swipe="cardSwiped($index)">
+    Card content here
+  </swipe-card>
+  <swipe-card on-destroy="cardDestroyed($index)" on-card-swipe="cardSwiped($index)">
+    Card content here
+  </swipe-card>
+</swipe-cards>
         <div class="headerImage" style="margin-left: -10px; width: calc(100% + 20px);">
             <img src="img/ISj82RhQJWzAFNez4ZzO_2jaguarftypesvrfeb16.jpg" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
             <h1 class="imagetxt">Lets Drive</h1>
