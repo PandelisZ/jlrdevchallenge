@@ -69,11 +69,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  .state('app.home', {
-      url:'/home',
+  .state('app.journeys', {
+      url:'/myjourneys',
       views:{
         'menuContent': {
-          templateUrl: 'templates/homeScreen.html'
+          templateUrl: 'templates/myjourneys.html'
         }
       }
   })
@@ -103,6 +103,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           templateUrl: 'templates/journeyViewTrack.html'
         }
       }
+  })
+
+  .state('app.home', {
+    url: '/home',
+    views: {
+      'menuContent':{
+        templateUrl: 'templates/homeScreen.html'
+      }
+    }
   })
 
 
