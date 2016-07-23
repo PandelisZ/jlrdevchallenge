@@ -2,17 +2,24 @@
 
 <link href="../css/style.css" rel="stylesheet">
 <script src="../js/progressbar.js"></script>
+<style> 
+	body {
+	   font-family: Raleway, Helvetica, sans-serif;
+	}
+</style>
 
-<div id="container">
+<div id="container" style="margin: 0 auto; width: 60%;">
 
-</div>
+</div><br />
+
+<p style="color: #ffffff; text-align: center; font-size: 20px">Eco-Driving: 60miles</p>
 
 <script type="text/javascript">
 	// progressbar.js@1.0.0 version is used
 	// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
 
 	var bar = new ProgressBar.Circle(container, {
-	  color: '#000',
+	  color: '#00FF00',
 	  // This has to be the same size as the maximum width to
 	  // prevent clipping
 	  strokeWidth: 4,
@@ -23,13 +30,13 @@
 		autoStyleContainer: false
 	  },
 	  from: { color: '#aaa', width: 1 },
-	  to: { color: '#333', width: 4 },
+	  to: { color: '#00FF00', width: 4 },
 	  // Set default step function for all animate calls
 	  step: function(state, circle) {
 		circle.path.setAttribute('stroke', state.color);
 		circle.path.setAttribute('stroke-width', state.width);
 
-		var value = Math.round(circle.value() * 80);
+		var value = Math.round(circle.value() * 100);
 		if (value === 0) {
 		  circle.setText('');
 		} else {
@@ -42,5 +49,5 @@
 	bar.text.style.fontSize = '2rem';
 	bar.text.style.verticalAlign = 'middle';
 
-	bar.animate(1.0);  // Number from 0.0 to 1.0
+	bar.animate(0.7);  // Number from 0.0 to 1.0
 </script>
