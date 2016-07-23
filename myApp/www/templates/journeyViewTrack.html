@@ -1,17 +1,34 @@
+<style>
+.overlay {
+   background:transparent;
+   position:relative;
+   width:100%;
+   height:400px;
+   top:400px;
+   margin-top: -400px;
+}
+</style>
+
 <ion-view title="Dubai Track Day" id="page2" class="">
 <ion-content scroll="false"overflow-scroll="true">
 
-      <h1>Hello WOrld</h1>
+      <h1>Track day overview</h1>
 
       <ion-slides  options="options" slider="data.slider">
         <ion-slide-page>
-          <iframe src="maps/map.html?q=gear"></iframe>
+		  <h2>Speed</h2>
+		  <div class="overlay" onClick="style.pointerEvents='none'"></div>
+          <iframe src="maps/map.html?set=1&q=speed" style="width:100%;height:400px;"></iframe>
         </ion-slide-page>
         <ion-slide-page>
-          <div class="box yellow"><h1>YELLOW</h1></div>
+		  <h2>Gear</h2>
+		  <div class="overlay" onClick="style.pointerEvents='none'"></div>
+          <iframe src="maps/map.html?set=1&q=gear" style="width:100%;height:400px;"></iframe>
         </ion-slide-page>
         <ion-slide-page>
-          <div class="box pink"><h1>PINK</h1></div>
+		  <h2>Throttle</h2>
+		  <div class="overlay" onClick="style.pointerEvents='none'"></div>
+          <iframe src="maps/map.html?set=1&q=throttle" style="width:100%;height:400px;"></iframe>
         </ion-slide-page>
       </ion-slides>
   </ion-list>
