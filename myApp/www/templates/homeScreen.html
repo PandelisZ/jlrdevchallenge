@@ -1,3 +1,14 @@
+<style>
+.overlay {
+   background:transparent; 
+   position:relative; 
+   width:100%;
+   height:400px; 
+   top:400px;  
+   margin-top: -400px;  
+}
+</style>
+
 <ion-view title="Home Screen" hide-nav-bar="true" id="page2" style="background-color:#000;" class="">
   <ion-floating-button click="myEvent()" has-footer="false" button-color="#ef473a" icon="ion-plus" iconColor="#fff">
 </ion-floating-button>
@@ -14,6 +25,7 @@
             <ion-item class="item-icon-left assertive  " id="homeScreen-list-item1" ui-sref="app.journey1">
                 <i class="icon ion-model-s"></i>Dubai Track Day<div class="right date">27/03/2016</div></ion-item>
             <div class=" item item-image">
+				<div class="overlay" onClick="style.pointerEvents='none'"></div>
                 <iframe src="maps/map.html?set=1" style="width:100%;height:420px;"></iframe>
             </div>
             <div class="item item-body " id="homeScreen-list-item-container1">
@@ -27,6 +39,7 @@
             <ion-item class="item-icon-left assertive  " id="homeScreen-list-item1" ui-sref="tabsController.cartTabDefaultPage">
                 <i class="icon ion-model-s"></i>Commute to work<div class="right date">10/02/2016</div></ion-item>
             <div class=" item item-image">
+				<div class="overlay" onClick="style.pointerEvents='none'"></div>
 				<iframe src="maps/map.html?set=2" style="width:100%;height:420px;"></iframe>
             </div>
             <div class="item item-body " id="homeScreen-list-item-container1">
@@ -40,6 +53,7 @@
             <ion-item class="item-icon-left assertive  " id="homeScreen-list-item1" ui-sref="tabsController.cartTabDefaultPage">
                 <i class="icon ion-model-s"></i>Day in the city<div class="right date">03/01/2016</div></ion-item>
             <div class=" item item-image">
+				<div class="overlay" onClick="style.pointerEvents='none'"></div>
 				<iframe src="maps/map.html?set=3" style="width:100%;height:420px;"></iframe>
             </div>
             <div class="item item-body " id="homeScreen-list-item-container1">
