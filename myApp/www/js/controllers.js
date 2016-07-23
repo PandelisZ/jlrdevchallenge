@@ -1,4 +1,4 @@
-angular.module('starter.controllers', ['ion-floating-menu'])
+angular.module('starter.controllers', ['ionic','ion-floating-menu'])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
@@ -41,12 +41,12 @@ angular.module('starter.controllers', ['ion-floating-menu'])
   };
 })
 
-.controller('slider', function($scope) {
+.controller('slider', function($scope, $ionicSlideBoxDelegate) {
   $scope.options = {
   loop: false,
-  effect: 'fade',
+  effect: 'slide',
   speed: 500,
-};
+}
 
 $scope.$on("$ionicSlides.sliderInitialized", function(event, data){
   // data.slider is the instance of Swiper

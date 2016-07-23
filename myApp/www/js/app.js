@@ -78,6 +78,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
   })
 
+  .state('app.live', {
+      url:'/live',
+      views:{
+        'menuContent': {
+          templateUrl: 'templates/live.html'
+        }
+      }
+  })
+
   .state('app.journey1', {
       url:'/journey1',
       views:{
