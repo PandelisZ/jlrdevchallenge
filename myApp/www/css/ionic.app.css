@@ -9841,3 +9841,10 @@ ion-view {
 
 .camera {
   font-size: 60px; }
+
+#container {
+  margin: 20px;
+  width: 80%;
+  height: 200px;
+  position: relative;
+  float: center; }
