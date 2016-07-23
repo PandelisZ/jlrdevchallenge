@@ -21,3 +21,15 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+.imagetxt {color: white; font-size: 28px; margin-top: -40px; margin-left: 10px;}
+.headerImage {
+  margin-top: -10px;
+}
+
+ion-view {background-color: #000;}
+
+.right {float:right;}
+
+.date {color: #111; }
+
+.materialAdd {bottom: 0px; position: absolute; color: purple; float:right;}
