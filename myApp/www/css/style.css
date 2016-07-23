@@ -1,1 +1,8 @@
 /* Empty. Add your own CSS if you like */
+#container {
+  margin: 20px;
+  width: 80%;
+  height: 200px;
+  position: relative;
+  float: center;
+}
