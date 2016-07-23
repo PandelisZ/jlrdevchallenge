@@ -1,49 +1,42 @@
 <html>
-<head>
-<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
-
-<link href="../css/style.css" rel="stylesheet">
-<script src="../js/progressbar.js"></script>
-<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-
-
-</head>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+		<link href="../css/style.css" rel="stylesheet">
+		<script src="../js/progressbar.js"></script>
+	</head>
 <body>
 <ion-content>
 <div class="row">
 
 	<div class="col">
 		<div class="wrapper">
-			<!---<img id="speedImage" src="/img/ios7-speedometer-outline.png"/>--->
-			<div id="container1" style="width: 5%; margin: 0 auto"></div>
+			
+			<div id="container5"><img src="/img/ios7-speedometer-outline.png"/></div>
 		</div>
 	</div>
 	
 	<div class="col">
-		<div class="wrapper">
-			<!---<img id="speedImage" src="/img/ios7-timer-outline.png"/>--->
-			<div id="container2" style="width: 5%; margin: 0 auto"></div>
+		<div class="wrapper">	
+			<div id="container2"><img src="/img/ios7-timer-outline.png"/></div>
 		</div>
 	</div>
 	
 	<div class="col">	
 		<div class="wrapper">
-			<!---<img id="speedImage" src="/img/android-earth.png"/>--->
-			<div id="container3" style="width: 5%; margin: 0 auto"></div>
+			<div id="container3"><img src="/img/android-earth.png"/></div>
 		</div>
 	</div>	
 	
 	<div class="col">
 		<div class="wrapper">
-			<!---<img id="speedImage" src="/img/android-friends.png"/>--->
-			<div id="container4" style="width: 5%; margin: 0 auto"></div>
+			<div id="container4"><img src="/img/android-friends.png"/></div>
 		</div>
 	</div>	
 </div>
 </ion-content>
 
   <script>
-  var bar = new ProgressBar.Circle(container1, {
+  var bar = new ProgressBar.Circle(container5, {
   color: '#aaa',
   // This has to be the same size as the maximum width to
   // prevent clipping
@@ -55,7 +48,7 @@
     autoStyleContainer: false
   },
   from: { color: '#aaa', width: 1 },
-  to: { color: '#f00', width: 4 },
+  to: { color: '#0f0', width: 4 },
   // Set default step function for all animate calls
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
