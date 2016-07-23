@@ -1,9 +1,15 @@
 /* Empty. Add your own CSS if you like */
 
-#container1, #container2, #container3, #container4 {
-  margin: 200px;
+#container5, #container2, #container3, #container4 {
+  position: relative;
+  float: center;
+  height: 70px;
+  width: 70px;
+}
+
+#progressBarContainer {
   width: 80%;
-  height: 100px;
+  height: 200px;
   position: relative;
   float: center;
 }
@@ -20,25 +26,18 @@
 	color:#4E77BD;
 }
 
-
 .col {
-	width: 33%;
+	width: 19%;
 	float: left;
+	margin-right: 6%;
 }
 
-#speedImage {
-	margin-top:-5px;
-	margin-left:-.5px;
-	
-}
-
-
-.wrapper > #container1, .wrapper > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 5.1%;
-    height: 50%;
+.wrapper img {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	height: 50px;
+	width: 50px;
 	z-index: -99;
 }
 
