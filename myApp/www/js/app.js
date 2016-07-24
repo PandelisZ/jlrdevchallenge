@@ -73,7 +73,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url:'/myjourneys',
       views:{
         'menuContent': {
-          templateUrl: 'templates/myjourneys.html'
+          templateUrl: 'templates/myjourney.html'
         }
       }
   })

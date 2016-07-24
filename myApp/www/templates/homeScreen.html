@@ -13,19 +13,11 @@
 </style>
 
 <ion-view title="Home Screen" hide-nav-bar="true" id="page2" style="background-color:#000;" class="">
-  <ion-floating-button click="myEvent()" has-footer="false" button-color="#ef473a" icon="ion-plus" iconColor="#fff">
+  <a ng-href="/#/app/journey"><ion-floating-button ui-sref="app.journey" click="" has-footer="false" button-color="#ef473a" icon="ion-plus" iconColor="#fff"></a>
 </ion-floating-button>
     <ion-content padding="true" class="manual-ios-statusbar-padding">
 
 
-      <swipe-cards>
-  <swipe-card on-destroy="cardDestroyed($index)" on-card-swipe="cardSwiped($index)">
-    Card content here
-  </swipe-card>
-  <swipe-card on-destroy="cardDestroyed($index)" on-card-swipe="cardSwiped($index)">
-    Card content here
-  </swipe-card>
-</swipe-cards>
         <div class="headerImage" style="margin-left: -10px; width: calc(100% + 20px);">
             <img src="img/ISj82RhQJWzAFNez4ZzO_2jaguarftypesvrfeb16.jpg" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
             <h1 class="imagetxt">Lets Drive</h1>
@@ -36,9 +28,9 @@
         </div>
         <div class="list card " id="homeScreen-card21">
             <ion-item class="item-icon-left assertive  " id="homeScreen-list-item1" ui-sref="app.journey1">
-                <i class="icon ion-model-s"></i>Based on your driving</ion-item>
+                <i class="icon ion-ios-analytics"></i>Based on your driving</ion-item>
                 <div class="item item-body">
-        <img class="full-image" src="img/catnfid.jpg">
+        <img class="full-image fillCanvas" src="img/catnfid.jpg">
         <p>
           The A54 – A537 from Buxton to Macclesfield is the “Cat and Fiddle” named after the pub which lays at the summit, and what must be the most famous road around the Peak District particularly for bikers.
         </p>
@@ -50,34 +42,20 @@
         </div>
 
         <div class="list card " id="homeScreen-card21">
-            <ion-item class="item-icon-left assertive  " id="homeScreen-list-item1" ui-sref="tabsController.cartTabDefaultPage">
-                <i class="icon ion-model-s"></i>Commute to work<div class="right date">10/02/2016</div></ion-item>
-            <div class=" item item-image">
-				<div class="overlay" onClick="style.pointerEvents='none'"></div>
-				<iframe src="maps/map.html?set=2" style="width:100%;height:420px;"></iframe>
-            </div>
-            <div class="item item-body " id="homeScreen-list-item-container1">
-                <p id="homeScreen-null" style="margin-top:0px;color:#000000;" class=" ">
-                  <Strong>Distance:</Strong> 54 km     <strong>Top Speed:</strong> 103 km/h
-                </p>
-            </div>
-        </div>
-
-        <div class="list card " id="homeScreen-card21">
-            <ion-item class="item-icon-left assertive  " id="homeScreen-list-item1" ui-sref="tabsController.cartTabDefaultPage">
-                <i class="icon ion-model-s"></i>Day in the city<div class="right date">03/01/2016</div></ion-item>
-            <div class=" item item-image">
-				<div class="overlay" onClick="style.pointerEvents='none'"></div>
-				<iframe src="maps/map.html?set=3" style="width:100%;height:420px;"></iframe>
-            </div>
-            <div class="item item-body " id="homeScreen-list-item-container1">
-                <p id="homeScreen-null" style="margin-top:0px;color:#000000;" class=" ">
-                  <Strong>Distance:</Strong> 28 km     <strong>Top Speed:</strong> 51 km/h
-                </p>
-            </div>
+            <ion-item class="item-icon-left assertive  " id="homeScreen-list-item1" ui-sref="app.journey1">
+                <i class="icon ion-ios-analytics"></i>Other drivers also liked</ion-item>
+                <div class="item item-body">
+        <img class="full-image fillCanvas" src="img/cheddar.jpg">
+        <p>
+          This is another great driving road situated in the West Country and is a route that incorporates the Cheddar Gorge. This road is just 10 miles south-west of Bristol and 8 miles east of Weston-Super-Mare.
+        </p>
+        <p>
+          <a href="#" class="subdued">30 Likes</a>
+          <a href="#" class="subdued">128 Drives</a>
+        </p>
+      </div>
         </div>
 
     <!-- the menu content -->
-  </ul>
     </ion-content>
 </ion-view>

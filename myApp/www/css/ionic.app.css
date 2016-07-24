@@ -9848,3 +9848,7 @@ ion-view {
   height: 200px;
   position: relative;
   float: center; }
+
+.fillCanvas {
+  margin: -20px 20px 0 -20px;
+  width: 110%; }
