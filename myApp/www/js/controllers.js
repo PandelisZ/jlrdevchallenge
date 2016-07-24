@@ -1,4 +1,4 @@
-angular.module('starter.controllers', ['ionic','ion-floating-menu'])
+angular.module('starter.controllers', ['ionic','ion-floating-menu','chart.js'])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
@@ -76,11 +76,13 @@ $scope.$on("$ionicSlides.slideChangeEnd", function(event, data){
   ];
 })
 
+
 .controller('HomeCtrl', function($scope ){
   $scope.lol = 'test';
   $scope.cards = [
   'test', 'test'
 ];
+
 
 $scope.cardDestroyed = function(index) {
   $scope.cards.splice(index, 1);
